@@ -187,11 +187,53 @@ nav {
     max-width: 300px;
     max-height: 400px;
     margin-top: 40px;
+    position: relative;
 }
 
 .game-img {
     width: 100%;
+    display: block;
+    width: 100%;
+    height: auto;
+  
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 89%;
+    width: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff;
+    border:2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+ .card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+
+
 
 /* instant play section styles */
 
@@ -282,7 +324,7 @@ footer {
 
 .footer {
     max-width: 800px;
-    margin: 100px auto;
+    margin: 100px auto 0px;
 }
 
 
@@ -423,7 +465,14 @@ footer {
         font-size: 30px;
     }
 
+ .overlay {
+     
+        height: 94%;
+        width: auto;
 
+     
+    }
+      
 
     .instant-game-section {
         flex-direction: column;
@@ -572,5 +621,9 @@ footer {
         width: 66%;
         margin: 30px auto;
     }
+    .overlay {
+     
+        height: 90%;
 
+}
 }
