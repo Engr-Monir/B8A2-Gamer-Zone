@@ -627,3 +627,39 @@ footer {
 
 }
 }
+
+
+@media screen and (min-width:800px) and (max-width:1150px) {
+
+
+    .online-games-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+
+    .instant-game-section{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .instant-game-description {
+        width: 100%;
+        text-align: center;
+    }
+    .instant-game-container {
+        width: 100%;
+    }
+    .instant-game-img{
+        width: 66%;
+        margin: 30px auto;
+        margin-left: 300px;
+    }
+    .overlay {
+     
+        height: 90%;
+
+}
+
+
+}
